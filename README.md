@@ -1,5 +1,7 @@
 # docker-demo
 
+Demo project for demonstration of Spring + Docker + Lombok + Swagger
+
 
 Command to run MySQL Server on docker :
 
