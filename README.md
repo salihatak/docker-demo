@@ -12,3 +12,10 @@ Command to run Spring Application on docker :
 ```
 docker run -d -p 8089:8089 --name docker-demo --link mysql-standalone:mysql/mysql-server docker-demo
 ```
+
+To Login MySQL running docker
+
+```
+docker exec -it mysql-standalone mysql -uroot -p
+```
+
