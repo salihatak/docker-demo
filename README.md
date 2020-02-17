@@ -2,6 +2,11 @@
 
 Demo project for demonstration of Spring + Docker + Lombok + Swagger
 
+Command to build docker image from DockerFile
+
+```
+docker build -t docker-demo .
+```
 
 Command to run MySQL Server on docker :
 
