@@ -6,17 +6,17 @@ import com.asa.dockerdemo.exception.InvalidTransationReferenceException;
 import com.asa.dockerdemo.model.Transaction;
 import com.asa.dockerdemo.service.TransactionService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class TransactionController {
 
-    final
-    TransactionService transactionService;
+    final TransactionService transactionService;
 
     @PostMapping("/create")
     public Long createTransaction(@RequestBody Transaction transaction) {
