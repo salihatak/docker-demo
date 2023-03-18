@@ -2,13 +2,6 @@
 
 Demo project for demonstration of Spring + Docker + Lombok + Swagger
 
-Just run command below
-```
-docker-compose up
-```
-
-Or
-
 Command to build docker image from DockerFile
 
 ```

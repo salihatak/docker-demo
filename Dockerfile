@@ -1,4 +1,7 @@
-FROM openjdk:12
-ADD target/docker-demo.jar docker-demo.jar
-EXPOSE 8089
-ENTRYPOINT ["java", "-jar", "docker-demo.jar"]
+FROM maven:3.8.2-jdk-8
+
+WORKDIR /docker-demo
+COPY . .
+RUN mvn clean install -DskipTests
+
+CMD mvn spring-boot:run
