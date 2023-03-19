@@ -1,4 +1,4 @@
-# Docker Demo application
+# Docker Demo Application
 
 Demo project for demonstration of Spring + Docker + Lombok + Swagger
 
