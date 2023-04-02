@@ -5,6 +5,7 @@ import java.util.Optional;
 import com.asa.dockerdemo.model.Transaction;
 import com.asa.dockerdemo.repository.TransactionRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -14,10 +15,10 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class TransactionService {
 
-    final TransactionRepository transactionRepository;
+    private final TransactionRepository transactionRepository;
 
     public void saveTransaction(Transaction transaction) {
         transactionRepository.save(transaction);
